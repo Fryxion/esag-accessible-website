@@ -4,11 +4,14 @@
   "private": true,
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
-    "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.3.0",
     "@testing-library/user-event": "^13.5.0",
+    "classnames": "^2.5.1",
+    "focus-trap-react": "^11.0.4",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
+    "react-intersection-observer": "^9.16.0",
+    "react-router-dom": "^7.6.3",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
@@ -16,7 +19,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "test:a11y": "npm run test -- --testPathPattern=accessibility",
+    "build:analyze": "npm run build && npx serve -s build"
   },
   "eslintConfig": {
     "extends": [
@@ -35,5 +40,18 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "devDependencies": {
+    "@axe-core/react": "^4.10.2",
+    "@testing-library/jest-dom": "^6.6.3"
+  },
+  "description": "Accessible website for Escola Secundária Almeida Garrett following WCAG 2.2 guidelines",
+  "keywords": "[\"accessibility\", \"wcag\", \"react\", \"education\", \"portuguese-school\"]",
+  "author": "Tiago <tiagosilva102004@gmail.com>",
+  "repository": {
+    "url": "https://github.com/fryxion/esag-accessible-website.git",
+    "type": "git"
+  },
+  "homepage": "https://fryxion.github.io/esag-accessible-website",
+  "license": "MIT"
 }
