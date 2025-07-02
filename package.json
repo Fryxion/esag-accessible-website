@@ -1,5 +1,5 @@
 {
-  "name": "esag-accessible-website",
+  "name": "esag-website",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -44,14 +44,5 @@
   "devDependencies": {
     "@axe-core/react": "^4.10.2",
     "@testing-library/jest-dom": "^6.6.3"
-  },
-  "description": "Accessible website for Escola Secundária Almeida Garrett following WCAG 2.2 guidelines",
-  "keywords": "[\"accessibility\", \"wcag\", \"react\", \"education\", \"portuguese-school\"]",
-  "author": "Tiago <tiagosilva102004@gmail.com>",
-  "repository": {
-    "url": "https://github.com/fryxion/esag-accessible-website.git",
-    "type": "git"
-  },
-  "homepage": "https://fryxion.github.io/esag-accessible-website",
-  "license": "MIT"
+  }
 }
